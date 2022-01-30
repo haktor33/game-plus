@@ -1,38 +1,502 @@
-.App {
-  text-align: center;
+:root {
+    --green: #76b900;
+    --black: #000;
+    --dark-grey: #1e1e1e;
+    --grey-medium: #666;
+    --grey-light: #b2b2b2;
+    --white: #fff;
+    --red: #ff2525;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: GreycliffCF;
+    src: local(GreycliffCF), url(./GreycliffCF-Thin.woff2) format("woff2"), url(./GreycliffCF-Thin.woff) format("woff"), url(./GreycliffCF-Thin.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Text-Style {
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    text-align: center;
+    color: var(--white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Text-Style-2 {
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #afafaf;
 }
 
-.App-link {
-  color: #61dafb;
+.DT_04_01_Games {
+    width: 1440px;
+    height: 2817px;
+    background-color: var(--white);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-header {
+    width: 1440px;
+    height: 80px;
+    padding: 14px 119px 0 120px;
+    background-color: var(--white);
+}
+
+.header-button {
+    position: absolute;
+    width: fit-content;
+    top: 31px;
+}
+
+img.logo {
+    width: 317px;
+    height: 53px;
+    margin: 0 144px 13px 0;
+    object-fit: contain;
+}
+
+.Games {
+    width: 56px;
+    height: 19px;
+    margin: 0 40px 10px 0;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    text-align: center;
+    color: var(--green);
+}
+
+.Membership {
+    width: 98px;
+    height: 19px;
+    margin: 0 40px 10px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    color: var(--black);
+}
+
+.Download {
+    width: 81px;
+    height: 19px;
+    margin: 0 40px 10px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    color: var(--black);
+}
+
+.Blog {
+    width: 35px;
+    height: 19px;
+    margin: 0 40px 10px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    color: var(--black);
+}
+
+.Support {
+    width: 63px;
+    height: 19px;
+    margin: 0 0 10px 40px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    color: var(--black);
+}
+
+
+.REGISTER {
+    width: 185px;
+    height: 40px;
+    margin: 6px 0 20px 61px;
+    padding: 0 0.5px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.57px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.gfn-motif-background-hero-2560x300-d2x {
+    width: 1440px;
+    height: 240px;
+    padding: 90px 323px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img.gfn-motif-background-hero-2560x300-d2x {
+    width: 1440px;
+    height: 310px;
+    padding: 49px 305px 48px;
+    object-fit: contain;
+    position: relative;
+}
+
+.Lorem-ipsum-dolor-si {
+    width: 793px;
+    height: 48px;
+    margin: 0 1px 15px 0;
+    font-family: GreycliffCF;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+.With-the-Cloud-Gamin {
+    width: 793px;
+    height: 52px;
+    margin: 15px 1px 49px 0;
+    font-family: GreycliffCF;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+.SearchBar.Rectangle {
+    width: 793px;
+    height: 56px;
+    padding: 0 103px 0 17px;
+    background-color: var(--white);
+}
+
+img.Combined-Shape {
+    width: 22px;
+    height: 22px;
+    padding: 17px 17px 17px 0;
+    object-fit: contain;
+}
+
+.Search-Games {
+    width: 634px;
+    height: 56px;
+    padding: 0 0 0 17px;
+    font-family: GreycliffCF;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8e9fad;
+    position: absolute;
+    border: none;
+}
+
+.bg-color {
+    width: 1847px;
+    height: 1492px;
+    padding: 51px 120px;
+    background-color: var(--black);
+}
+
+.bg-color-white {
+    width: 1440px;
+    height: 114px;
+    padding: 24px 195px 24px 121px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: var(--dark-grey);
+}
+
+.Games-Membership-Dow {
+    width: 91px;
+    height: 66px;
+    margin: 0 60px 0 0;
+}
+
+.Contact-Us-Blog {
+    width: 80px;
+    height: 44px;
+    margin: 0 60px 22px;
+}
+
+.FAQs-Service-Status {
+    width: 103px;
+    height: 44px;
+    margin: 0 0 22px 60px;
+}
+
+.Follow-Us {
+    width: 77px;
+    height: 22px;
+    margin: 0 13px 16px 1px;
+    font-weight: bold;
+    margin-left: 500px;
+}
+
+.Site-Language {
+    width: 108px;
+    height: 22px;
+    margin: 0 0 14px;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: var(--dark-grey);
+}
+
+.Footer.Rectangle {
+    width: max-content;
+    height: 41px;
+    padding: 8px 120px 0 121px;
+    background-color: var(--dark-grey);
+}
+
+.Terms-of-Use {
+    width: 81px;
+    height: 40px;
+    margin: 0 20px 0 0;
+    font-family: GreycliffCF;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.Privacy-Policy {
+    width: 81px;
+    height: 40px;
+    margin: 0 20px;
+    font-family: GreycliffCF;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.Cookies {
+    width: 81px;
+    height: 40px;
+    margin: 0 733px 0 20px;
+    font-family: GreycliffCF;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.Tm-haklar-sakldr {
+    width: 183px;
+    height: 40px;
+    margin: 0 0 0 733px;
+    font-family: GreycliffCF;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--white);
+}
+
+.Browse-Games {
+    width: 199px;
+    height: 33px;
+    margin: 13px 207px 33px 0;
+    font-family: GreycliffCF;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.SortDropDown.Rectangle {
+    width: 151px;
+    height: 56px;
+    margin: 0 0 23px 663px;
+    padding: 16px 16px 15px;
+    background-color: var(--dark-grey);
+    font-family: GreycliffCF;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #afafaf;
+}
+
+.Title-A-Z {
+    width: 79px;
+    height: 24px;
+    margin: 1px 16px 0 0;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    height: 414px;
+}
+
+
+
+.filter.bg-color {
+    width: 386px;
+    height: 1142px;
+    margin: 33px 20px 1048px 0;
+    padding: 40px 30px 60px;
+    background-color: var(--dark-grey);
+    font-family: GreycliffCF;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #afafaf;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 20px 0;
+    object-fit: contain;
+    border: solid 1px #afafaf;
+    accent-color: var(--green);
+}
+
+.checkbox-text {
+    margin: 20px 0 0 0px;
+    font-family: GreycliffCF;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #afafaf;
+}
+
+
+.card-list {
+    overflow: hidden;
+    height: 1240px;
+    width: max-content;
+    margin: 33px 0 30px;
+}
+
+    .card-list:hover {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+.card-bg-color {
+    box-sizing: border-box;
+    width: 794px;
+    height: 414px;
+    margin: 0 0 30px;
+    padding: 30px;
+    background-color: var(--dark-grey);
+}
+
+.card-item {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 0 95px 16px 0;
+    font-family: GreycliffCF;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #afafaf;
+}
+
+.category-name {
+    width: 60px;
+    height: 60px;
+    margin: 0 317px 30px 0;
+    padding: 9px 21px 12px 20px;
+    object-fit: contain;
+    background-repeat:no-repeat;
+}
+
+.category-name-label {
+    width: 21px;
+    height: 36px;
+    font-family: GreycliffCF;
+    font-size: 30px;
+    font-weight: bolder;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dark-grey);
 }
